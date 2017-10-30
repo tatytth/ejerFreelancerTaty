@@ -1,0 +1,309 @@
+/*
+ * Estilos de tu proyecto
+ */
+
+/*Resetear los estilos por defecto que coloca el navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+
+    font-family: Lato,Montserrat,sans-serif;
+    font-size: 16px;
+
+}
+
+header{
+  background-color: #2C3E50;
+  position: fixed; /*posicion fija*/
+  top: 0px; 
+  width: 100%; /*3 lineas para que el encabezado este al 100%*/
+  /*height: 100px;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+/*MENU*/
+
+nav {
+  ; /*Todos los elementos de nav se alinean verticalmente*/
+}
+
+nav .menu li {
+list-style: none; /*Quita viñetas*/
+display: inline-block; /*despliega horizontalmente elementos*/
+}
+
+.logo{
+  width: 40%;
+  /*background-color: red;*/
+}
+
+.logo a{
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase; 
+  text-decoration: none; /*Quita subrayado*/
+  font-family: Montserrat;
+}
+
+.menu{
+  width: 56.5%;
+  text-align: right;
+  /*background-color: blue;*/
+
+}
+
+.menu li{
+    /*float: right;*/
+    margin: 5px;
+}
+
+.menu li a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+.menu li a:hover {
+color: #18BC9C;
+}
+
+.menu li a:active{
+  border-radius: 5px;
+  background: #18BC9C;
+  color: white;
+  padding: 8px;
+}
+.logo, .menu{
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  /*padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;*/
+}
+
+/*SECCION INICIO*/
+
+.contenedor{
+  text-align: center;
+  background: #18BC9C;
+  padding-top: 140px;
+  padding-bottom: 70px; 
+}
+
+.inicio, .about {
+  color: white;
+}
+
+/*SECCION PORTAFOLIO*/
+
+.portafolio, .contact{
+  color: #212529;
+  background-color: white;
+}
+
+.portafolio{
+  overflow: hidden;
+}
+
+/*iNFLUYE A TODAS LAS SECCIONES*/
+span.nombreb{
+  font-size: 40px;
+  color: white;
+
+}
+
+span.nombreo{
+  font-size: 40px;
+  color: #2C3E50;
+
+}
+
+span.detalle{
+  font-size: 20px;
+
+}
+
+/*PORTAFOLIO*/
+
+div.imagen {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin: 15px;
+}
+
+div.imagen img {
+    width: 100%;
+}
+
+/*LÍNEA-ESTRELLA PARA TODAS LAS SECCIONES*/
+
+.lineab, .lineao {
+  position: relative;
+}
+
+.lineab::before, .lineab::after {
+  background-color: white;
+  content: '';
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  width: 130px;
+}
+
+.lineao::before, .lineao::after {
+  background-color: #2C3E50;
+  content: '';
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  width: 130px;
+}
+
+.lineab::before, .lineao::before {
+  left: calc(50% + 30px);
+}
+
+.lineab::after, .lineao::after {
+  right: calc(50% + 30px);
+}
+
+.lineab .icono , .lineao .icono {
+  background-color: transparent; 
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+.lineab.icono {
+  color: white;
+}
+
+.lineao.icono {
+  color: #2C3E50;
+}
+
+/*ABOUT*/
+
+.p1, .p2{
+  width: 30%;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top; /*PARA ALINEAR TODOS LOS TEXTOS ARRIBA*/
+}
+
+/*Download*/
+.boton{
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  text-decoration: none; 
+}
+
+.boton:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: #18BC9C;
+  margin-top: 20px;
+}
+
+/*FORMULARIO*/
+
+form{
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+form label {
+  color: #868E96;
+  font-size: 18px;
+}
+
+input, textarea{
+  border-bottom: 1px solid #B5B8BC;
+  color: #9E9C9B;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*Boton del formulario*/
+
+button{
+  background-color: #18BC9C;
+  color: white;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button:hover{
+  background-color: #128F76; 
+}
+
+/*PIE*/
+
+footer{
+background-color: #212529;
+color: white;
+text-align: center;
+
+}
+
+/*Fs de Footer*/
+
+.f1, .f2, .f3 {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+
+.nombres{
+  font-style: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.copy{
+  margin-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.f2 ul li{
+  list-style: none;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid white;
+  margin:5px; 
+}
+
+.f3 a{
+  color:#18BC9C;
+  text-decoration: none;
+}
+
+.f3 a:hover{
+  text-decoration: underline;
+}
